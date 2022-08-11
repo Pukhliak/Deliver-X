@@ -1,0 +1,29 @@
+{
+  "name": "deliver-x",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass scss/styles.scss build/stylesheets/index.css",
+    "scss:watch": "node-sass -w scss/styles.scss build/stylesheets/index.css",
+    "autoprefixer": "postcss -u autoprefixer -r build/stylesheets/index.css",
+    "imagemin": "imagemin images/* --out-dir=dist/images",
+    "build": "npm run scss && npm run autoprefixer"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Pukhliak/Deliver-X.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pukhliak/Deliver-X./issues"
+  },
+  "homepage": "https://github.com/Pukhliak/Deliver-X#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.8",
+    "imagemin-cli": "^7.0.0",
+    "node-sass": "^7.0.1",
+    "postcss-cli": "^10.0.0"
+  }
+}
