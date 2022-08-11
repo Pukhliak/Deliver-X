@@ -1,6 +1,14 @@
+//fonts
+$textFont: "Roboto Regular", sans-serif;
+$titleFont: "Roboto Bold", serif;
+
+//colors
 $colorBlack: #121212;
 $colorGrey: #656565;
 $colorOrange: #ff5634;
 $colorBorder: #ededed;
 $colorBackground: #e5e5e5;
-$mainPadding: toRem(200);
+$colorPseudoElements: #cacaca;
+
+//padding
+$paddingTop: toRem(200);
