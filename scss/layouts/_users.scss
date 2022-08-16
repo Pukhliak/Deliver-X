@@ -1,0 +1,45 @@
+.section {
+  &__users {
+    margin-top: toRem(120);
+
+    @media (max-width: 1024px) {
+      margin-top: toRem(60);
+    }
+  }
+}
+
+.users {
+  display: flex;
+  flex-direction: column;
+  gap: toRem(50);
+
+  &__title {
+    p {
+      font-family: $textFont;
+      font-size: toRem(20);
+      line-height: 1.1;
+      text-align: center;
+      color: $colorGrey;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 1024px) {
+      flex-direction: column;
+      align-items: center;
+      gap: toRem(20);
+    }
+  }
+
+  &::after {
+    @include underline;
+    margin-top: toRem(145);
+
+    @media (max-width: 1024px) {
+      margin-top: toRem(45);
+    }
+  }
+}

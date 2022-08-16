@@ -1,0 +1,72 @@
+.header {
+  &__buttons {
+    button {
+      padding: toRem(19) 0;
+      border-radius: toRem(12);
+      cursor: pointer;
+    }
+    a {
+      padding: toRem(19) toRem(25);
+    }
+    &--download {
+      background: $colorWhite;
+      border: 1px solid $colorBorder;
+      box-shadow: 0px 2px 6px rgba(16, 16, 16, 0.04);
+      margin-left: toRem(32);
+      a {
+        color: $colorBlack;
+      }
+      @media (max-width: 1024px) {
+        margin-left: inherit;
+      }
+    }
+
+    &--register {
+      background: $colorOrange;
+      border: 1px solid $colorOrange;
+      margin-left: toRem(16);
+      a {
+        color: $colorWhite;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      margin-top: toRem(16);
+    }
+  }
+}
+
+.hero {
+  &__content {
+    &__buttons {
+      @media (max-width: 1024) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      &--register {
+        @include register;
+        @media (max-width: 1024px) {
+          margin-right: 0;
+          margin-bottom: toRem(50);
+        }
+      }
+
+      &--download {
+        @include download;
+        @media (max-width: 1024px) {
+          margin-bottom: toRem(50);
+        }
+      }
+
+      &::after {
+        @include underline;
+        margin-right: toRem(50);
+        margin-top: toRem(60);
+        @media (max-width: 1024px) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,12 +1,16 @@
-@import "./abstracts/fonts";
+@import "./base/typography";
 @import "./abstracts/mixins";
 @import "./abstracts/variables";
+@import "./abstracts/fonts";
 
 @import "./base/global";
-@import "./base/typography";
 
 @import "./components/container";
 @import "./components/nav";
+@import "./components/buttons";
 
 @import "./layouts/footer";
 @import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/users";
+@import "./layouts/about";
