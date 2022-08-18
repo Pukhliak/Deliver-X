@@ -420,3 +420,138 @@ ul {
   @media (max-width: 1024px) {
     .about::after {
       margin-top: 3.75rem; } }
+
+.section__advantage {
+  padding: 12.5rem 0; }
+  @media (max-width: 1024px) {
+    .section__advantage {
+      padding: 3.75rem 0; } }
+
+.advantage {
+  display: flex;
+  margin-bottom: 11.25rem; }
+  @media (max-width: 1024px) {
+    .advantage {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 3.75rem; } }
+  @media (max-width: 768px) {
+    .advantage {
+      align-items: inherit; } }
+  .advantage__content {
+    width: 50%;
+    margin-top: 2.5rem; }
+    @media (max-width: 1024px) {
+      .advantage__content {
+        width: 100%; } }
+    .advantage__content__title {
+      margin-bottom: 2.1875rem;
+      margin-right: 4.375rem; }
+      .advantage__content__title h2 {
+        margin: 0; }
+      .advantage__content__title p {
+        font-family: "Roboto Regular", sans-serif;
+        font-size: 0.75rem;
+        line-height: 2.5;
+        color: #656565;
+        margin: 0; }
+      @media (max-width: 1024px) {
+        .advantage__content__title {
+          margin-left: 2.5rem;
+          text-align: center; } }
+    .advantage__content__cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2.1875rem; }
+      .advantage__content__cards p {
+        text-align: center;
+        font-family: "Roboto Regular", sans-serif;
+        font-size: 0.875rem;
+        line-height: 2.14;
+        color: #656565; }
+      .advantage__content__cards h5 {
+        margin: 1.5625rem 0 0.9375rem; }
+      .advantage__content__cards div {
+        display: flex;
+        flex-direction: column; }
+        .advantage__content__cards div img {
+          max-width: 63px;
+          height: auto; }
+      @media (max-width: 1024px) {
+        .advantage__content__cards {
+          justify-content: center; } }
+  .advantage__pic {
+    position: relative; }
+    .advantage__pic__burger {
+      position: absolute;
+      max-width: 472px;
+      height: auto;
+      left: 8.125rem; }
+      @media (max-width: 1024px) {
+        .advantage__pic__burger {
+          position: inherit;
+          left: inherit;
+          margin-top: 1.875rem; } }
+      @media (max-width: 768px) {
+        .advantage__pic__burger {
+          display: none; } }
+    .advantage__pic__app {
+      max-width: 254px;
+      height: auto;
+      margin-top: 4.0625rem;
+      margin-left: 0.9375rem; }
+      @media (max-width: 1024px) {
+        .advantage__pic__app {
+          margin-top: 0;
+          margin-left: 0;
+          max-height: 570px; } }
+      @media (max-width: 768px) {
+        .advantage__pic__app {
+          margin: 0 auto;
+          padding: 1.25rem 0; } }
+    @media (max-width: 1024px) {
+      .advantage__pic {
+        position: inherit;
+        display: flex;
+        gap: 1.875rem;
+        align-items: center; } }
+    @media (max-width: 768px) {
+      .advantage__pic {
+        background-image: url("/images/advantage_bg.png");
+        background-repeat: no-repeat;
+        background-size: cover; } }
+  .advantage__buttons {
+    display: flex;
+    justify-content: center; }
+    .advantage__buttons--register {
+      background: #ff5634;
+      border: 1px solid #ff5634;
+      border-radius: 1rem;
+      padding: 1.625rem 0;
+      margin-right: 1.6875rem; }
+      .advantage__buttons--register a {
+        font-family: "Roboto Regular", sans-serif;
+        font-size: 1.125rem;
+        line-height: 1.1;
+        color: #fff;
+        padding: 1.625rem 2.4375rem; }
+      @media (max-width: 768px) {
+        .advantage__buttons--register {
+          margin: 0 auto; } }
+    .advantage__buttons--download {
+      background: #fff;
+      border: 1px solid #ededed;
+      box-shadow: 0px 2px 6px rgba(16, 16, 16, 0.04);
+      border-radius: 1rem;
+      padding: 1.625rem 0; }
+      .advantage__buttons--download a {
+        font-family: "Roboto Regular", sans-serif;
+        font-size: 1.125rem;
+        line-height: 1.1;
+        color: #121212;
+        padding: 1.625rem 2.4375rem; }
+    @media (max-width: 768px) {
+      .advantage__buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.9375rem; } }
