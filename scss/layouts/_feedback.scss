@@ -1,0 +1,122 @@
+.section {
+  &__feedback {
+    padding: toRem(200) 0;
+    background-color: $colorBgSectionFeedback;
+
+    @media (max-width: 1024px) {
+      padding: toRem(100) 0;
+    }
+  }
+}
+
+.feedback {
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: toRem(48);
+
+    @media (max-width: 1024px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: toRem(25);
+
+      h2,
+      p {
+        text-align: center;
+      }
+    }
+    p {
+      margin: 0;
+      font-size: 12px;
+      line-height: 2.5;
+      color: $colorGrey;
+    }
+    h2 {
+      margin: 0 0 toRem(22);
+    }
+
+    &__buttons {
+      @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        gap: toRem(10);
+      }
+      &--register {
+        @include register;
+
+        @media (max-width: 768px) {
+          margin-right: 0;
+        }
+      }
+      &--download {
+        @include download;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    gap: toRem(28);
+    flex-direction: column;
+
+    @media (max-width: 1024px) {
+      flex-direction: row;
+    }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    &__cards {
+      display: flex;
+      gap: toRem(28);
+
+      @media (max-width: 1024px) {
+        flex-direction: column;
+      }
+    }
+    &__card {
+      background: $colorWhite;
+      border: 1px solid $colorBorder;
+      box-shadow: 0px 2px 12px rgba(16, 16, 16, 0.08);
+      border-radius: 24px;
+      padding: toRem(42) toRem(33);
+
+      &--title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p {
+          margin: 0;
+          font-size: toRem(18);
+          line-height: 1.1;
+          color: $colorBlack;
+        }
+        span {
+          font-size: toRem(16);
+          line-height: 1.125;
+          color: $colorOrange;
+        }
+        img {
+          margin-right: toRem(10);
+        }
+
+        &--item {
+          display: flex;
+          align-items: center;
+        }
+      }
+
+      &--text {
+        p {
+          margin: toRem(30) toRem(8) 0 0;
+          line-height: 1.67;
+          color: $colorGrey;
+        }
+      }
+    }
+  }
+}

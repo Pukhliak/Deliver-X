@@ -1,6 +1,6 @@
 .section {
   &__advantage {
-    padding: $paddingTop 0;
+    padding: $paddingTop 0 toRem(100);
 
     @media (max-width: 1024px) {
       padding: toRem(60) 0;
@@ -86,7 +86,7 @@
       position: absolute;
       max-width: 472px;
       height: auto;
-      left: toRem(130);
+      right: -22.5vw;
 
       @media (max-width: 1024px) {
         position: inherit;

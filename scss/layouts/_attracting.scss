@@ -1,0 +1,50 @@
+.section {
+  &__attracting {
+    background-color: $colorBgSectionFeedback;
+    padding: toRem(131) 0 toRem(200);
+  }
+}
+
+.wrapper {
+  &__attracting {
+    background-color: $colorBlack;
+  }
+}
+
+.attracting {
+  display: flex;
+  align-items: center;
+
+  &__title {
+    h3 {
+      color: $colorWhite;
+      margin: 0 0 toRem(20);
+    }
+
+    p {
+      color: $colorWhite;
+      margin: 0 0 toRem(33);
+      font-size: toRem(12);
+      line-height: 2.5;
+    }
+
+    button {
+      @include register;
+    }
+  }
+
+  &__pictures {
+    display: flex;
+    img {
+      width: clamp(160px, 280px, 320px);
+      height: auto;
+    }
+    :nth-child(1) {
+      z-index: 1;
+      transform: translateY(toRem(-72));
+    }
+    :nth-child(2) {
+      transform: translate(toRem(-210), toRem(-72));
+    }
+  }
+}
